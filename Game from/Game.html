@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Games.css">
+</head>
+<body>
+    <div class="nav"></div>
+    <div class="for">
+        <form>
+            <input type="text" class="ok" id="f" placeholder="Enter first name">
+            <br>
+            <br>
+            <br>
+            <input type="text" class="ok" id="s" placeholder="Enter last name">
+            <br>
+            <br>
+            <br>
+            <input type="text" class="ok" id="t" placeholder="Enter game ID number">
+            <br>
+            <br>
+            <br>
+            <input type="text" class="ok" id="fo" placeholder="Enter OTP">
+            <br>
+            <br>
+            <br>
+            <button class="o" onclick="cll()">Click</button>
+        </form>
+    </div>
+
+    <script>
+        const cll = () => {
+            let first = document.getElementById('f').value;
+            let second = document.getElementById('s').value;
+            let third = document.getElementById('t').value;
+            let fourth = document.getElementById('fo').value;
+            
+            if (first === '' || !isNaN(first)) {
+    alert('First name should not be blank and should be a character.');
+} else {
+  //  console.log(first);
+    alert(`it is you first name ${first}`);
+    
+}
+
+            if ( second === '' || !isNaN(second)) {
+    alert('First name should not be blank and should be a character.');
+} else {
+ //console.log(first);
+    
+    alert(`it is your lname ${second}`)
+}
+if (third.value === '' || isNaN(third.value) || third.value.length < 5) {
+    alert('Game ID should not be blank, should be a number, and have a minimum length of 5.');
+} else {
+    alert(`It is your game ID: ${third}`)
+}
+if (fourth.value === '' || isNaN(fourth.value) || fourth.value.length < 5) {
+    alert('Game ID should not be blank, should be a number, and have a minimum length of 5.');
+} else {
+    alert(`It is your game ID: ${fourth}`);
+}
+
+
+        }
+    </script>
+</body>
+</html>

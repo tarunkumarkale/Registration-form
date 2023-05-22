@@ -1,0 +1,52 @@
+body{
+      background-image: url("https://giffiles.alphacoders.com/210/210096.gif");  
+
+     background-size: 100% ;
+     background-repeat: no-repeat;
+    height: 90%;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.for{
+    
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+
+
+}
+.ok{
+    width: 300px;
+    height: 30px;
+    background-color: black;
+    color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    border-radius: 5px;
+}
+.o{
+    position: absolute;
+    left:90px;
+    width: 100px;
+    height: 30px;
+    background-color: green;
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    border-radius: 2%;
+}
+
+.o:hover{
+background-color: brown;
+font-size: 13px;
+
+}
+.o:active{
+background-color: brown;
+}
+
